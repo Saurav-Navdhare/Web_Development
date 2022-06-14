@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Language = Eng-->
+    <head>
+        <!--Meta tags: something that doesn't show up in the content of website-->
+        <title>CatPhotoApp</title> <!--Names the title i.e. tab name-->
+        <!--Here we can Put links to an external CSS file or JavaScript File-->
+    </head>
+    <body>
+        <p>This was a tutorial from <a href="https://www.youtube.com/watch?v=916GWv2Qs08" target="_blank">FreeCodeCamp Video</a></p>
+        <h2>CatPhotoApp</h2>
+        <main>
+            <h3>Cat Photos</h3>
+            <!-- This is a Comment-->
+            <!-- Source: https://www.youtube.com/watch?v=916GWv2Qs08 -->
+            <P>Click here to view more <a href="#" target = "_blank">cat photos</a></P>
+            <!--# just holds the empty link, target = "_blank" makes link to open in new tab-->
+            <a href="#" target = "_blank"><img src="https://s3.amazonaws.com/freecodecamp/relaxing-cat.jpg" alt = "An orange cat lying on its back."></a>
+            <div class="lists"> <!--div tag is created so we can use and beautify it using css-->
+                <!--class attributes are specifically used in HTML to style with css-->
+                <!--Here we can target all list element as class=lists-->
+                <h3>Cat Lists</h3>
+                <p>Things Cat <em>love</em>:</p> <!--em stands for italic-->
+                <ul> <!--ul stands for unordered lists have dots as bullet-->
+                    <li>Cat nip</li>
+                    <li>laser pointer</li>
+                    <li>Food</li>
+                </ul>
+                <p>Things cat <strong>hate</strong>:</p> <!--strong stands for bold-->
+                <ol> <!--ol stands for ordered lists have numbers as bullet-->
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+            </div>
+            <form action = "/submit-cat-photos" target = "_blank"> <!--action is the url that the form will be sent to-->
+                <!--target = "_blank" makes link to open in new tab-->                
+                <input type = "radio"> indoor
+                <label><input type = "radio"> outdoor</label> <!--Generate Radio Button-->
+                <!--Label: when we click to text, the radio button automatically is selected-->
+                <input type = "text" placeholder = "cat photo URL" required>
+                <!-- input box; placeholder: The light grey text in empty input-->
+                <!-- required make it compulsory to fill the input-->
+                <button type="submit">
+                    Submit  <!-- Text between opening and closing tag will be shown on button-->
+                </button><br>
+                <!--br tag is used after closing tag to make element come to new line-->
+                <!--If we create radio groups, selecting one radio button will deselect other one-->
+                <label for = "Sitting"><input type = "radio" name = "sit-stand" id = "Sitting">Sitting</label><br>
+                <label for = "Standing"><input type = "radio" name = "sit-stand" id = "Standing">Standing</label><br>
+                <!--Adding Name to the Group, we can create Group in HTML-->
+                <!--Adding Id to an element helps us to access it later like using it in label tag with for attribute -->
+                <!--Order of attributes doesn't matter-->
+                <!--br tag is used after closing tag to make element come to new line-->
+                <label for = "Loving"><input type = "checkbox" name = "personality" id = "Loving">Loving</label>
+                <label for = "Lazy"><input type = "checkbox" name = "personality" id = "Lazy">Lazy</label>
+                <label for = "Energetic"><input type = "checkbox" name = "personality" id = "Energetic" checked>Energetic</label>
+                <!--checked makes default selected-->
+            </form> 
+        </main>
+        <footer>
+            <!--Footer tag: Used to prepare footer-->
+            <p><small>No Copyright - <a href = "https://github.com/saurav-navdhare" target = "_blank">Saurav Navdhare</a></small></p>
+            <!--small tag: Used to make text smaller-->
+        </footer>
+    </body>
+</html>
