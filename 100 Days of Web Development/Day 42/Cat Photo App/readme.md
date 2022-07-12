@@ -1,0 +1,1 @@
+This mainly focuses on writing basic HTML
