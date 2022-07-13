@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Survey</h1>
+    <p id="description">This is a Survey Form</p>
+    </header>
+    <form id="survey-form">
+      <label id="name-label">Enter your Name: <input placeholder="Enter your Name" name="name" value="name" id="name" type="text" required /></label>
+      <label  id="email-label">Enter your email: <input placeholder="Enter your email" value="email" name="email" id="email" type="email" required /></label>
+      <label id="number-label">Enter a Number: <input placeholder="18" name="number" value="number" id="number" type="number" min=13 max=120 /></label>
+      <select id="dropdown">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+        <option>Not to disclose</option>
+      </select>
+        <label class="coding">Coder<input type="radio" name="radio" value="Coder" /></label>
+        <label class="coding">Non Coder<input type="radio" name="radio" value="nonCoder" /></label>
+        <label>JavaScript<input type="checkbox" name="lang" value="JavaScript"></label>
+        <label>Python<input type="checkbox" name="lang" value="Python"></label>
+        <label>C++<input type="checkbox" name="lang" value="C++"></label>
+        <label>Bio: <textarea placeholder="I am Saurav Navdhare"></textarea></label>
+        <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
