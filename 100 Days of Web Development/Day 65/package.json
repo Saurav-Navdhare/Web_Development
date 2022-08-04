@@ -1,0 +1,11 @@
+{
+  "name": "day-65",
+  "version": "1.0.0",
+  "description": "Knowing nodemon and globally installed node packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saurav Navdhare",
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+const fs = require('fs');
+const myJSON = fs.readFileSync('myJSON.json', 'utf8', (err,data)=>{
+    if(err) throw err;
+    const myJSON = JSON.parse(data);
+}); //reading the json file
+console.log(myJSON);

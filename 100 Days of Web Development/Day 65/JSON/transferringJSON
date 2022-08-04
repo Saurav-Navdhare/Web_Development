@@ -1,0 +1,12 @@
+const fs = require('fs');
+
+const myData = {
+    name: "Saurav",
+    age: 18,
+    hobbies: ["coding", "finance", "cricket"],
+};
+const myJSON = JSON.stringify(myData); //JSON stringify converts the object into a string
+fs.writeFileSync('myJSON.json', myJSON, (err)=>{
+    if(err) throw err;
+    console.log("File created");
+}); //writing the JSON string to a json file
