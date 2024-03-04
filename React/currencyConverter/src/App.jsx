@@ -4,7 +4,7 @@ import InputBox from "./components/InputBox";
 import useCurrencyInfo from "./hooks/useCurrencyInfo";
 
 function App() {
-    const BackgroundImage="https://www.compareremit.com/uploads/AdobeStock_98127764.jpeg";
+    const BackgroundImage = "https://www.compareremit.com/uploads/AdobeStock_98127764.jpeg";
     const [amount, setAmount] = useState(0);
     const [fromCurrency, setFromCurrency] = useState("usd");
     const [toCurrency, setToCurrency] = useState("inr");
@@ -20,14 +20,14 @@ function App() {
         setAmount(convertedAmount);
     }
 
-    const convert = () => {setConvertedAmount(amount * fromCurrencyInfo[toCurrency])};
+    const convert = () => { setConvertedAmount(amount * fromCurrencyInfo[toCurrency]) };
 
     return (
         <div
             className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
             style={{
                 backgroundImage: `url('${BackgroundImage}')`,
-                
+
             }}>
 
             <div className="w-full">
@@ -40,13 +40,13 @@ function App() {
                     >
                         <div className="w-full mb-1">
                             <InputBox
-                                label="From"  
+                                label="From"
                                 amount={amount}
-                                onAmountChange={setAmount}
-                                onCurrencyChange={(currency)=>setFromCurrency(currency)}
+                                onAmountChange={(setAmount)}
+                                onCurrencyChange={(currency) => setFromCurrency(currency)}
                                 currencyOptions={options}
                                 selectedCurrency={fromCurrency}
-                                  
+
                             />
                         </div>
                         <div className="relative w-full h-0.5">
@@ -60,10 +60,10 @@ function App() {
                         </div>
                         <div className="w-full mt-1 mb-4">
                             <InputBox
-                                label="To" 
+                                label="To"
                                 amount={convertedAmount}
                                 onAmountChange={setAmount}
-                                onCurrencyChange={(currency)=>setToCurrency(currency)}
+                                onCurrencyChange={(currency) => setToCurrency(currency)}
                                 currencyOptions={options}
                                 selectedCurrency={toCurrency}
                                 amountDisabled
