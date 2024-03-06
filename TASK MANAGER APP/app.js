@@ -10,7 +10,7 @@ require('dotenv').config();
 app.use(express.static('./public'));
 app.use(express.json());
 
-//route
+//routes        
 app.get("/hello", (req,res)=>{
     res.send("Task Manager App")
 })
